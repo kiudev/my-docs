@@ -4,7 +4,7 @@ title: Props
 
 Las **props** son los parámetros que le pasas a un componente desde fuera. Fluyen siempre en una dirección: de padre a hijo. Un componente no puede modificar sus propias props.
 
-### Sintaxis básica
+## Sintaxis básica
 
 ```jsx
 // Definir el componente recibiendo props
@@ -21,7 +21,7 @@ function Tarjeta({ titulo, descripcion }) {
 <Tarjeta titulo="React" descripcion="Una biblioteca de JavaScript" />;
 ```
 
-### Qué puedes pasar como prop
+## Qué puedes pasar como prop
 
 Cualquier tipo de dato de JavaScript:
 
@@ -38,7 +38,7 @@ Cualquier tipo de dato de JavaScript:
 
 > Los strings se pasan con "", el resto siempre con {}
 
-### Props por defecto
+## Props por defecto
 
 Si no te pasan una prop puedes definir un valor por defecto:
 
@@ -54,7 +54,7 @@ function Boton({ texto = "Click aquí", color = "azul" }) {
 <Boton texto="Enviar" color="rojo" />
 ```
 
-### La prop especial: `children`
+## La prop especial: `children`
 
 Es el contenido que se pone entre las etiquetas del componente:
 
@@ -70,7 +70,7 @@ function Contenedor({ children }) {
 </Contenedor>;
 ```
 
-### Flujo unidireccional
+## Flujo unidireccional
 
 Las props solo bajan, nunca suben. Si un hijo necesita comunicarse con el padre, se le pasa una función como prop:
 

@@ -4,7 +4,7 @@ title: JSX
 
 **JSX (JavaScript XML)** es una extensión de sintaxis de JavaScript. No es HTML, aunque se parece. El navegador no lo entiende directamente, por eso React lo transforma a JavaScript puro antes de ejecutarse (mediante Babel o el compilador de React).
 
-### Diferencias con HTML
+## Diferencias con HTML
 
 | HTML                   | JSX                    |
 | ---------------------- | ---------------------- |
@@ -21,7 +21,7 @@ title: JSX
 <div className="caja" onClick={handleClick}></div>
 ```
 
-### Reglas importantes
+## Reglas importantes
 
 1. **Un solo elemento raíz** — todo debe estar envuelto en un contenedor:
 
@@ -75,7 +75,7 @@ return (
 );
 ```
 
-> #### Lo que NO puedes meter en {}
+> ## Lo que NO puedes meter en {}
 >
 > Las llaves solo aceptan expresiones, no sentencias:
 >

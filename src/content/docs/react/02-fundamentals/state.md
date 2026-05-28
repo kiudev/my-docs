@@ -4,7 +4,7 @@ title: State
 
 El **state** es la memoria interna de un componente. A diferencia de las props, el state es privado y el propio componente lo controla. Cuando cambia, React vuelve a renderizar el componente automáticamente.
 
-### useState
+## useState
 
 Es el hook básico para manejar estado:
 
@@ -18,7 +18,7 @@ const [valor, setValor] = useState(valorInicial);
 - setValor → la función para actualizarlo
 - valorInicial → el valor con el que arranca
 
-### Ejemplo básico
+## Ejemplo básico
 
 ```jsx
 function Contador() {
@@ -34,7 +34,7 @@ function Contador() {
 }
 ```
 
-### Reglas importantes
+## Reglas importantes
 
 1. Nunca mutes el estado directamente, siempre usa la función setter:
 
@@ -68,7 +68,7 @@ usuario.nombre = "Luis";
 setUsuario({ ...usuario, nombre: "Luis" });
 ```
 
-### Múltiples estados
+## Múltiples estados
 
 Puedes tener tantos useState como necesites:
 

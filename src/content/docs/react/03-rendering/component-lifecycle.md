@@ -4,7 +4,7 @@ title: Component Lifecycle
 
 Es el ciclo de vida de un componente: desde que aparece en pantalla hasta que desaparece. React ejecuta código en momentos concretos de ese ciclo.
 
-### Las 3 fases
+## Las 3 fases
 
 ```
 Montaje          Actualización        Desmontaje
@@ -13,7 +13,7 @@ Aparece en        State o props        Desaparece
 pantalla            cambian           del DOM
 ```
 
-### useEffect
+## useEffect
 
 En componentes funcionales el ciclo de vida se maneja con el hook `useEffect`:
 
@@ -26,7 +26,7 @@ useEffect(() => {
 }, [dependencias]);
 ```
 
-### Montaje
+## Montaje
 
 Se ejecuta una vez cuando el componente aparece en el DOM:
 
@@ -37,7 +37,7 @@ useEffect(() => {
 }, []); // Array vacío = solo al montar
 ```
 
-### Actualización
+## Actualización
 
 Se ejecuta cada vez que cambian las dependencias que le indiques:
 
@@ -55,7 +55,7 @@ useEffect(() => {
 }); // Sin array = siempre
 ```
 
-### Desmontaje
+## Desmontaje
 
 La función que devuelves dentro del efecto se ejecuta cuando el componente desaparece. Sirve para limpiar suscripciones, timers, etc.:
 
@@ -71,7 +71,7 @@ useEffect(() => {
 }, []);
 ```
 
-### Resumen de los 3 casos
+## Resumen de los 3 casos
 
 ```jsx
 // Solo al montar
@@ -89,7 +89,7 @@ useEffect(() => {
 }, []);
 ```
 
-### Ejemplo completo real
+## Ejemplo completo real
 
 ```jsx
 function Usuarios() {

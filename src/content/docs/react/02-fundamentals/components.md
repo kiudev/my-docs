@@ -4,7 +4,7 @@ title: Componentes
 
 Los **componentes** en React son funciones de JavaScript que devuelven JSX. Representan una pieza de la UI, pueden ser tan pequeños como un botón o tan grandes como una página entera.
 
-### Tipos
+## Tipos
 
 Hoy en día React usa componentes funcionales. Los de clase son legacy y ya no se recomiendan.
 
@@ -22,7 +22,7 @@ class Boton extends React.Component {
 }
 ```
 
-### Reglas importantes
+## Reglas importantes
 
 1. El nombre siempre en mayúscula, si no React lo interpreta como etiqueta HTML:
 
@@ -43,7 +43,7 @@ function Mensaje({ visible }) {
 }
 ```
 
-### Composición
+## Composición
 Los componentes se pueden anidar unos dentro de otros. Esta es la idea central de React: construir UIs complejas combinando piezas simples.
 
 ```jsx
